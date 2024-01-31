@@ -1,4 +1,20 @@
+/*done by christian smith with the help of Thomas*/
 html {
     border: 30px;
-    margin-left: ;
+    color: #C10635;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
 }

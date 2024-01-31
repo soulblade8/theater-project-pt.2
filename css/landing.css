@@ -1,0 +1,16 @@
+/* CSS done by Thomas Lowe */
+
+.hero {
+    background-image: none;
+    height: 1vh;
+    width: 100%;
+    text-align: center;
+}
+
+p.left {
+    display: flex;
+}
+
+p.right {
+    display: flex;
+}
