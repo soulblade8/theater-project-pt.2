@@ -1,7 +1,5 @@
 /*done by christian smith with the help of Thomas*/
 html {
-    border: 30px;
-    color: #C10635;
     width: 100%;
 }
 
@@ -17,4 +15,14 @@ nav li {
 
 nav a {
     display: block;
+    background-color: #FF9375;
+}
+
+nav a:hover {
+    background-color: #FF474E;
+}
+
+.half {
+    width: 50%;
+    float: left;
 }

@@ -1,16 +1,21 @@
-/* CSS done by Thomas Lowe */
+/* CSS done by Thomas Lowe with help by christian*/
 
 .hero {
-    background-image: none;
-    height: 1vh;
+    height: 100vh;
     width: 100%;
     text-align: center;
+    line-height: 100vh;
+    background: url("../png/outside.png");
 }
 
 p.left {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 p.right {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
