@@ -1,5 +1,5 @@
 /*set the date displayed in calendar */
-var thisDay = new Date ();
+var thisDay = new Date();
 
 /*Write the calendar to id calendar */
 document.getElementById("calendar").innerHTML = createCalendar(thisDay);
@@ -7,9 +7,10 @@ document.getElementById("calendar").innerHTML = createCalendar(thisDay);
 /*generate calendar tables */
 function createCalendar(calDate) {
     var calendarHTML = "<table id= 'calendar_table'>";
-    calendarHTML += calCaption (calDate);
-    calendarHTML += calWeekdayrow ();
-    calendarHTML += calDays (calDate);
+    console.log("updated autopsy report");
+    calendarHTML += calCaption(calDate);
+    calendarHTML += calWeekdayRow();
+    calendarHTML += calDays(calDate);
     calendarHTML += "</table>";
     return calendarHTML;
 }
@@ -18,11 +19,12 @@ function createCalendar(calDate) {
 function calCaption(calDate) {
     //Months//
     var monthName= ["January","Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    console.log("do you know the muffin man");
     //determine current month//
-    var thisMonth = cal.Date.getMonth();
+    var thisMonth = calDate.getMonth();
 
     //write the current year//
-    var thisYear = cal.Date.getFullYear();
+    var thisYear = calDate.getFullYear();
 
     //write the caption//
     return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
@@ -58,7 +60,7 @@ function daysInMonth(calDate) {
     }
     
     //return the number of days for the current month//
-    return dayCount[thisMOnth];
+    return dayCount[thisMonth];
 }
 
 /*table rows for each day of month */
@@ -73,7 +75,7 @@ function calDays(calDate) {
         htmlCode += "<td></td>";
     } 
     //write cells for each day of the month//
-    var totalDays = dayInMonth(calDate);
+    var totalDays = daysInMonth(calDate);
 
     var highlightDay = calDate.getDate();
     for (var i = 1; i <= totalDays; i++) {
@@ -82,8 +84,7 @@ function calDays(calDate) {
 
         if (weekDay === 0) htmlCode += "<tr>";
         if (i === highlightDay) {
-            htmlCode += "<td class='calendar_dates' id='calendar_today'>" + i + dayEvent 
-            [i] + "</td>"
+            htmlCode += "<td class='calendar_dates' id='calendar_today'>" + i + dayEvent[i] + "</td>";
         } else {
             htmlCode += "<td class='calendar_dates'>" + i + dayEvent[i] + "</td>";
         }

@@ -17,30 +17,34 @@
                 <li><a href="../html/tickets.html">Tickets</a></li>
             </ul>
         </nav>
-    </header>
+    </header> <!--done by christian-->
 
-    <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="show-info">Shows</label>
-          <select id="Shows" name="show">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+    <div class="info">
+      <form action="action_page.php">
+        <div>
+        <label for="fname">First Name</label>
+        <input type="text" class="fname" name="firstname" placeholder="Your name.." required/>
+        </div>
+
+        <div>
+        <label for="lname">Last Name</label>
+        <input type="text" class="lname" name="lastname" placeholder="Your last name.." required/>
+        </div>
+
+        <div>
+        <label for="show-info">Shows</label>
+        <select id="Shows" name="show">
+          <option value="mainShow">Main Show</option>
+          <option value="sideShow">Side Show</option>
+          <option value="afterShow">After Show</option>
+        </select>
       </div>
+      <label for="pin">PIN: (4 digits)</label>
+        <input id="pin" type="password" placeholder="" name="pin" required
+        pattern="\d{4,4}"/>
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
 </body>
 </html>

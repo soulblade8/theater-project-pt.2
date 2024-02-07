@@ -1,21 +1,57 @@
 /* CSS done by Thomas Lowe with help by christian*/
 
+body {
+    background: linear-gradient(180deg, #E4EBEC, #FF9375);
+}
+
 .hero {
     height: 100vh;
     width: 100%;
     text-align: center;
     line-height: 100vh;
-    background: url("../png/outside.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover no-repeat url("../png/full_stage.png");
+    color: white;
 }
 
-p.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.row {
+    height: 817.88px;
 }
 
-p.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.left {
+    width: 50%;
+    float: left;
+    clear: both;
+    box-sizing: border-box;
+    padding: 6.25%;
+    height: 100%;
+    position: relative;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 6.25%;
+    height: 100%;
+    position: relative;
+}
+
+.left *, .right * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    clear: both;
+    background-color: #D0D0B3;
+    text-align: center;
 }
