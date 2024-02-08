@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy our tickets</title>
     <link href="../css/reset.css" rel="stylesheet" />
-    <link href="../css/buying.css" rel="stylesheet">
     <link href="../css/layout.css" rel="stylesheet"/>
+    <link href="../css/buying.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -34,17 +34,35 @@
         <div>
         <label for="show-info">Shows</label>
         <select id="Shows" name="show">
-          <option value="mainShow">Main Show</option>
-          <option value="sideShow">Side Show</option>
-          <option value="afterShow">After Show</option>
+          <option value="event 1">event 1</option>
+          <option value="event 2">event 2</option>
+          <option value="event 3">event 3</option>
         </select>
       </div>
+
+      <div>
       <label for="pin">PIN: (4 digits)</label>
-        <input id="pin" type="password" placeholder="" name="pin" required
+        <input id="pin" type="pin" placeholder="" name="pin" required
         pattern="\d{4,4}"/>
+      </div>
+
+      <div>
+        <label for="e-mail">E-mail</label>
+        <input id="e-mail" type="email" placeholder="name@exaple.com" required
+        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"/>
+      </div>
+
+      <div>
+        <label for="number">Phone Number</label>
+        <input id="number" type="tel" placeholder="389-738-7583" required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+      </div>
+
         <input type="submit" value="Submit">
     
       </form>
     </div>
+
+    <footer></footer>
 </body>
 </html>

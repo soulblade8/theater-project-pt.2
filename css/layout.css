@@ -14,6 +14,7 @@ nav li {
 }
 
 nav a {
+    line-height: 50px;
     display: block;
     background-color: #FF9375;
 }

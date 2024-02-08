@@ -1,3 +1,19 @@
+/*done by the ape brain christian*/
+
 div.info {
-    background-color: #FF474E;
+    word-wrap: break-word;
+    border-radius: 20px;
+    padding: 350px;
+    padding-left: 610px;
+    position: relative;
+}
+
+/*it adds flair to the page by adding a gradient*/
+body{
+    background: center/cover no-repeat linear-gradient(45deg,#D0D0B3 20%,#FF9375 50%,#C10635 100%);
+    height: 100vh;
+}
+
+input#zip:focus:valid{
+background: rgb(22,255,22);
 }
