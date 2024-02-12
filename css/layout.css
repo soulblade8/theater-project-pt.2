@@ -27,3 +27,9 @@ nav a:hover {
     width: 50%;
     float: left;
 }
+
+footer {
+    clear: both;
+    background-color: #D0D0B3;
+    text-align: center;
+}

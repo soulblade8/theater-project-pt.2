@@ -30,14 +30,18 @@
     vertical-align: top;
     font-size: 0.6em;
     padding: 1.5px;
-    border: 0.8px solid #E4EBEC;
-    background-color: rgb(#C10635);
+    background-color: #D0D0B3;
     height: 40px;
 }
 
 #calendar_today {
     font-weight: bold;
     color: rgb(#D0D0B3);
-    background-color: #E4EBEC;
+    background-color: #FF474E;
     border: 0.5px solid #FF9375;
+}
+
+.footer_alignment {
+    height: calc(100vh - 18px);
+    background: linear-gradient(0deg, #E4EBEC, #FF9375);
 }
